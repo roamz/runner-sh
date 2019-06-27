@@ -26,8 +26,7 @@ bump() {
   if [ "$latest_commit" = "$head_commit" ]; then
       echo "refusing to tag; $latest_ver already tagged for HEAD ($head_commit)"
   else
-      echo "tagging $next_ver $head_commit"
-      git tag "$next_ver" $head_commit
+      echo $next_ver
   fi
 }
 
